@@ -1,5 +1,9 @@
+import NavBar from "@/components/NavBar";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import "primeicons/primeicons.css";
+import "primereact/resources/primereact.min.css";
+import "primereact/resources/themes/saga-blue/theme.css";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <NavBar />
         {children}
       </body>
     </html>
